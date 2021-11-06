@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+*, *::after,*::before {
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+  }
+  h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0; 
+  }
+  h1,h2,h3,h4,h5,h6{
+      font-family: "Poppins";
+  }
+body {
+    background-image: url("images/bg-desktop.svg");
+    background-color: var(--violet);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    font-family:"Open Sans";
+  }
+  .main-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .text-container{
+      padding: 48px;
+      margin-top: 12px;
+      
+  }
+  h2{
+      color: white;
+      font-weight: 600;
+      font-size: 40px;
+  }
+  .information-container{
+      color: white;
+  }
+.title-container{
+    color: white;
+    padding: 0 0 0 24px;
+}
+  .registration-container button{
+    padding: 12px 48px;
+   border-radius: 24px;
+   font-size: 16px;
+   color: var(--violet);
+   border: none;
+  }
+  .information-container p{
+      margin: 24px 0;
+  }
+  .attribution{
+    margin-top: 32px;
+    color: white;
+  }
+  .registration-container button{
+    box-shadow:  4px 4px 8px midnightblue;
+  }
+  .icon-container{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding-right: 48px;
+    gap: 16px;
+  }
+  .icon-container i{
+    display: flex;
+    border: 1px solid white;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .attribution a{
+    color: aqua;
+  }
+  @media (max-width:900px){
+    .main-container{
+      grid-template-columns: 1fr;
+    }
+    .title-container img{
+      width: 180px;
+    }
+    .text-container{
+      text-align: center;
+    }
+    .icon-container{
+      justify-content: center;
+      padding:0;
+    }
+  }
