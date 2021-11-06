@@ -69,6 +69,10 @@ body {
     padding-right: 48px;
     gap: 16px;
   }
+  .icon-container a {
+    text-decoration: none;
+    color: white;
+  }
   .icon-container i{
     display: flex;
     border: 1px solid white;
