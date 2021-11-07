@@ -21,7 +21,7 @@ body {
     background-color: var(--violet);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     font-family:"Open Sans";
   }
   .main-container{
@@ -99,5 +99,8 @@ body {
     .icon-container{
       justify-content: center;
       padding:0;
+    }
+    body{
+      background-image:url("images/bg-mobile.svg");
     }
   }
